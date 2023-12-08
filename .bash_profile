@@ -6,9 +6,6 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# User specific environment and startup programs
-. "$HOME/.cargo/env"
-
 
 # Added by Toolbox App
 export PATH="$PATH:/home/daniel/.local/share/JetBrains/Toolbox/scripts"
