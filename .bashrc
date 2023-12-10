@@ -921,34 +921,4 @@ _killall()
 }
 
 complete -F _killall killall killps
-
-# cd /c/Users/dl93431/Desktop
-
-alias dev='cd /home/daniel/data/02_dev'
-
-# alias fx_prod='ssh fx_prod'
-# alias fx_uat='ssh fx_uat'
-# alias aae='ssh aae'
-# Local Variables:
-# mode:shell-script
-# sh-shell:bash
-# End:
-
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/daniel/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/daniel/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/daniel/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/daniel/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-conda deactivate
+alias startapp='npm run dev -- --host 0.0.0.0 --port 3000'
